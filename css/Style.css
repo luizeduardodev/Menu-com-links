@@ -1,0 +1,194 @@
+/* Reset da página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+}
+/* Retirar o Scrool bar da pagina */
+body{
+    background-color: black;
+}
+/* Conteudo principal */
+.container-principal{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.container-principal .principal-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+.container-principal .principal-1 img{
+    width: 13%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.container-principal .principal-1 h1{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+.container-principal .principal-1 p{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.container-principal .principal-1 .redes-socias{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+}
+.container-principal .principal-1 .redes-socias .insta i{
+    color: white;
+    transition: 0.3s;
+}
+.container-principal .principal-1 .redes-socias .insta i:hover{
+    color: #C83E73;
+}
+.container-principal .principal-1 .redes-socias .linkinden i{
+    color: white;
+    transition: .3s;
+}
+.container-principal .principal-1 .redes-socias .linkinden i:hover{
+    color: #0A66C2;
+}
+/* Links */
+.links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.links .link-1 a{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+.links .link-1 a:hover{
+    transform: rotate3d(1,1,1,1deg);
+    background-color: red;
+}
+/* Footer */
+#rodape p{
+    padding-top: 90px;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Responsividade - Tablet */
+@media(max-width:780px){
+    .container-principal .principal-1{
+        padding-top: 50px;
+    }
+    .container-principal .principal-1 img{
+        width: 20%;
+    }
+    .container-principal .principal-1 h1{
+        font-size: 2rem;
+    }
+    .container-principal .principal-1 p{
+        font-size: 1.5rem;
+    }
+    .container-principal .principal-1 .redes-socias{
+        font-size: 1.6rem;
+    }
+    /* Links */
+    .links .link-1 a{
+        font-size: 1.5rem;
+    }
+
+    /* Responsividade - 450px */
+    @media(max-width:450px){
+        .container-principal .principal-1{
+            padding-top: 30px;
+        }
+        .container-principal .principal-1 img{
+            width: 30%;
+        }
+        .container-principal .principal-1 h1{
+            font-size: 1.8rem;
+        }
+        .container-principal .principal-1 p{
+            font-size: 1.3rem;
+        }
+        .container-principal .principal-1 .redes-socias{
+            font-size: 1.4rem;
+        }
+        .links .link-1 a{
+            width: 350px;
+            font-size: 1.4rem;
+        }
+        #rodape p{
+            padding-top: 150px;
+        }        
+       
+        /* Resposividade - 375px */
+        @media(max-width:375px){
+            /* Conteudo principal */
+            .container-principal .principal-1{
+                padding-top: 50px;
+            }
+            .container-principal .principal-1 h1{
+                font-size: 1.7rem;
+            }
+            /* Links */
+            .links{
+                padding-top: 40px;
+            }
+            .links .link-1 a{
+                width: 300px;
+                font-size: 1.3rem;
+            }
+            #rodape p{
+                padding-top: 100px;
+            }   
+
+            /* Responsividade - 320px */
+            @media(max-width:320px){
+                /* Conteudo principal */
+                .container-principal .principal-1{
+                    padding-top: 100px;
+                }
+                .container-principal .principal-1 h1{
+                    font-size: 1.6rem;
+                }
+                .container-principal .principal-1 p{
+                    font-size: 1.2em;
+                }
+                .container-principal .principal-1 .redes-socias{
+                    font-size: 1.3rem;
+                }
+                .links .link-1 a{
+                    width: 280px;
+                    font-size: 1.2rem;
+                }
+                #rodape p{
+                    padding-top: 130px;
+                    font-size: 1em;
+                }   
+            }
+        }
+    }
+}
