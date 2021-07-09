@@ -149,7 +149,7 @@ body{
         @media(max-width:375px){
             /* Conteudo principal */
             .container-principal .principal-1{
-                padding-top: 90px;
+                padding-top: 40px;
             }
             .container-principal .principal-1 h1{
                 font-size: 1.7rem;
