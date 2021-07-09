@@ -8,7 +8,6 @@
 img{
     max-width: 100%;
 }
-/* Retirar o Scrool bar da pagina */
 body{
     background-color: black;
 }
@@ -24,10 +23,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 .container-principal .principal-1 img{
-    width: 13%;
+    width: 17%;
     border-radius: 50%;
     border: 2px solid white;
 }
@@ -62,6 +61,13 @@ body{
 .container-principal .principal-1 .redes-socias .linkinden i:hover{
     color: #0A66C2;
 }
+.container-principal .principal-1 .redes-socias .github i{
+    color: white;
+    transition: .3s;
+}
+.container-principal .principal-1 .redes-socias .github i:hover{
+    color: rgba(151, 151, 151, 0.867);
+}
 /* Links */
 .links{
     width: 100%;
@@ -71,7 +77,7 @@ body{
     padding-top: 50px;
 }
 .links .link-1 a{
-    width: 400px;
+    width: 350px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -82,17 +88,16 @@ body{
     border: 1px solid white;
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: .3s;
     margin-bottom: 20px;
 }
 .links .link-1 a:hover{
-    transform: rotate3d(1,1,1,1deg);
     background-color: red;
 }
 /* Footer */
 #rodape p{
-    padding-top: 90px;
+    padding-top: 70px;
     font-size: 1.1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -122,7 +127,7 @@ body{
     /* Responsividade - 450px */
     @media(max-width:450px){
         .container-principal .principal-1{
-            padding-top: 30px;
+            padding-top: 70px;
         }
         .container-principal .principal-1 img{
             width: 30%;
@@ -136,19 +141,15 @@ body{
         .container-principal .principal-1 .redes-socias{
             font-size: 1.4rem;
         }
-        .links .link-1 a{
-            width: 350px;
-            font-size: 1.4rem;
-        }
         #rodape p{
-            padding-top: 150px;
+            padding-top: 90px;
         }        
        
         /* Resposividade - 375px */
         @media(max-width:375px){
             /* Conteudo principal */
             .container-principal .principal-1{
-                padding-top: 50px;
+                padding-top: 90px;
             }
             .container-principal .principal-1 h1{
                 font-size: 1.7rem;
@@ -158,7 +159,7 @@ body{
                 padding-top: 40px;
             }
             .links .link-1 a{
-                width: 300px;
+                width: 330px;
                 font-size: 1.3rem;
             }
             #rodape p{
@@ -185,7 +186,7 @@ body{
                     font-size: 1.2rem;
                 }
                 #rodape p{
-                    padding-top: 130px;
+                    padding-top: 100px;
                     font-size: 1em;
                 }   
             }
