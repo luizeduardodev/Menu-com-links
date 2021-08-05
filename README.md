@@ -1,8 +1,11 @@
-# Menu com links para biografia
+<h1>
+🔗bio - luizz_edduardoo_
+</h1>
 
-Menu com links feito para biografia do instagram. 
+<img src="https://github.com/luizeduardodev/bio-luizeduardo/blob/main/assets/img/resultado_projeto.png" min-width="1000px" max-width="1000px" width="1000px" alt="">
 
-O site foi densenvolvido com HTML5 e CSS3, além de estar responsivo.
-Tem o intuito de ser utilizado na biografia do instagram para fazer a divulgação de links.
+<h4 align="center">
+  <a href="https://linkss.netlify.app/">Clique aqui para visitar o projeto</a>
+</h4>
 
-Link do site: https://linkss.netlify.app/
+<h4 align="center">@luizz_edduardoo_</h4>
