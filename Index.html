@@ -8,27 +8,28 @@
  
      <!--- SEO Geral --->
      <title>Bio | Luiz Eduardo</title>
-     <meta name="description" content="Menu com links para biografia do instagram.">
+     <meta name="description" content="">
      <link rel="canonical" href="https://linkss.netlify.app/">
      <meta name="author" content="Luiz Eduardo">
      <meta name="robots" content="index">
      <meta name="googlebot" content="index">
-     <!-- Breve descrição do assunto do seu site -->
-     <meta name="subject" content="Site com links para biografia do instagram">
-     <!-- Descreve o tema do website -->
-     <meta name="topic" content="Menu com links">
      <!-- Domínio completo ou o endereço web -->
      <meta name="url" content="https://linkss.netlify.app/">
 
     <!---Links--->
     <script src="https://kit.fontawesome.com/6e587148a4.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="./img/Icon.png">
-    <link rel="stylesheet" href="./css/Style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/img/Icon.png">
+    <link rel="stylesheet" href="./assets/css/Style.css">
   </head>
 
   <body>
     <main>
-      <div class="container-principal">
+      <section id="container-principal">
         <div class="container-input-checkbox">
           <label class="mudar-tema" for="checkbox">
             <input type="checkbox" id="checkbox">
@@ -51,10 +52,11 @@
           </label>
         </div>
 
-        <div class="principal-1">
-          <img src="./img/Novo Projeto.png" alt="Logo do Menu">
+        <div class="container-infos">
+          <img src="./assets/img/Novo Projeto.png" alt="Logo">
           <h1>Luiz Eduardo</h1>
           <p>Desenvolvedor Front-end</p>
+
           <div class="redes-socias">
             <a href="https://www.instagram.com/luizz_edduardoo_/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/luiz-eduardo-rodrigues-caldas-dos-santos-567249191/" class="linkinden"><i class="fab fa-linkedin-in"></i></a>
@@ -71,13 +73,14 @@
           </div>
   
           <footer id="rodape">
-            <p>Copyright<i class="fa fa-copyright" aria-hidden="true"></i> 2021 - por Luiz Eduardo</p>
+            <p>Copyright
+              <i class="fa fa-copyright"></i> 2021 - por Luiz Eduardo</p>
           </footer>
         </div>
-      </div>
+      </section>
     </main>
 
-    <script src="./js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 
 </html>

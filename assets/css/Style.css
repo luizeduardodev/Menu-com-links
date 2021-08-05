@@ -1,0 +1,336 @@
+/* Reset da página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Kanit', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* Variáveis root - dark and light mode */
+html[data-theme="light"]{
+    --bg: #f5f6f7;
+    --color-text: #000;
+    --border: 2px solid #000;
+    --bg-link: #000;
+    --color-link: #fff;
+}
+html[data-theme="dark"]{
+    --bg: #131419;
+    --color-text: #fff;
+    --border: 2px solid white;
+    --bg-link: #fff;
+    --color-link: #000;
+}
+body{
+    background-color: var(--bg);
+}
+/* Conteudo principal */
+#container-principal{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*Dark mode*/
+#container-principal .container-input-checkbox{
+    position: absolute;
+    left: 500px;
+    top: 10px;
+    display: flex;
+}
+.mudar-tema{
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+.mudar-tema input{
+    display: none;
+}
+.slider{
+    background-color: #0e0e0e;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.slider:before{
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+    border-radius: 50%;
+}
+input:checked + .slider:before{
+    transform: translateX(25px);
+}
+.slider svg{
+    color: #fff;
+    position: absolute;
+    transition: opacity 0.2s ease 0s, transform 0.35s ease 0s;
+    pointer-events: none;
+}
+.efeito-lua{
+    opacity: 0;
+    left: 9px;
+    bottom: 9px;
+    transform: translateX(4px);
+}
+.efeito-sol{
+    opacity: 1;
+    right: 10px;
+    bottom: 9px;
+    transform: translateX(0px);
+}
+input:checked + .slider .efeito-lua{
+    opacity: 1;
+    transform: translateX(0);
+}
+input:checked + .slider .efeito-sol{
+    opacity: 0;
+    transform: translateX(-4px);
+}
+.mudar-tema-wrapper{
+    display: flex;
+    align-items: center;
+}
+.mudar-tema-wrapper em{
+    margin-left: 10px;
+    font-size: 1rem;
+}
+/* Container infos */
+#container-principal .container-infos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+#container-principal .container-infos img{
+    width: 15%;
+    border-radius: 50%;
+    border: var(--border);
+}
+#container-principal .container-infos h1{
+    color: var(--color-text);
+    font-size: 2rem;
+    padding-top: 10px;
+    font-weight: 500;
+}
+#container-principal .container-infos p{
+    color: var(--color-text);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+#container-principal .container-infos .redes-socias{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+#container-principal .container-infos .redes-socias .insta i{
+    color: var(--color-text);
+    transition: 0.3s;
+}
+#container-principal .container-infos .redes-socias .insta i:hover{
+    color: #C83E73;
+}
+#container-principal .container-infos .redes-socias .linkinden i{
+    color: var(--color-text);
+    transition: .3s;
+}
+#container-principal .container-infos .redes-socias .linkinden i:hover{
+    color: #0A66C2;
+}
+#container-principal .container-infos .redes-socias .github i{
+    color: var(--color-text);
+    transition: .3s;
+}
+#container-principal .container-infos .redes-socias .github i:hover{
+    color: rgba(151, 151, 151, 0.867);
+}
+/* Links */
+.links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.links .link-1 a{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border: var(--border);
+    color: var(--color-text);
+    font-size: 1.4rem;
+    transition: .3s;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.links .link-1 a:hover{
+    background-color: var(--bg-link);
+    color: var(--color-link);
+}
+/* Footer */
+.container-infos #rodape p{
+    padding-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* RESPONSIVIDADE */
+
+/* Responsividade - 780px */
+@media(max-width: 780px){
+    /*Dark mode*/
+    #container-principal .container-input-checkbox{
+        left: 200px;
+    }
+    /* Container infos */
+    #container-principal .container-infos{
+        padding-top: 90px;
+    }
+    #container-principal .container-infos img{
+        width: 20%;
+    }
+    #container-principal .container-infos h1{
+        font-size: 1.9rem;
+    }
+    #container-principal .container-infos p{
+        font-size: 1.3rem;
+    }
+    #container-principal .container-infos .redes-socias{
+        font-size: 1.3rem;
+    }
+    /* Links */
+    .links{
+        padding-top: 40px;
+    }
+    .links .link-1 a{
+        width: 330px;
+        font-size: 1.3rem;
+    }
+    
+    /* Responsividade - 430px */
+    @media(max-width: 430px){
+        /*Dark mode*/
+        #container-principal .container-input-checkbox{
+            left: 40px;
+        }
+        /* Container infos */
+        #container-principal .container-infos{
+            padding-top: 100px;
+        }
+        #container-principal .container-infos img{
+            width: 35%;
+        }
+        #container-principal .container-infos h1{
+            font-size: 1.8rem;
+        }
+        #container-principal .container-infos p{
+            font-size: 1.3rem;
+        }
+        #container-principal .container-infos .redes-socias{
+            font-size: 1.3rem;
+        }
+        /* Links */
+        .links{
+            padding-top: 30px;
+        }
+        /* Footer */
+        .container-infos #rodape p{
+            font-size: 1rem;
+        }    
+       
+        /* Resposividade - 375px */
+        @media(max-width: 375px){
+            /*Dark mode*/
+            #container-principal .container-input-checkbox{
+                left: 20px;
+            }
+            .mudar-tema{
+                height: 32px;
+            }
+            .slider{
+                border-radius: 32px;
+            }
+            .slider:before{
+                height: 24px;
+                width: 24px;
+            }
+            .efeito-lua{
+                bottom: 8px;
+            }
+            .efeito-sol{
+                bottom: 8px;
+            }
+            /* Container infos */
+            #container-principal .container-infos{
+                padding-top: 90px;
+            }
+            #container-principal .container-infos img{
+                width: 40%;
+            }
+            #container-principal .container-infos h1{
+                font-size: 1.7rem;
+            }
+            #container-principal .container-infos p{
+                font-size: 1.2rem;
+            }
+            #container-principal .container-infos .redes-socias{
+                font-size: 1.2rem;
+            }
+            .links .link-1 a{
+                width: 300px;
+                font-size: 1.2rem;
+            }
+            .container-infos #rodape p{
+                padding-top: 40px;
+                font-size: 1rem;
+            }
+
+            /* Responsividade - 320px */
+            @media(max-width: 320px){
+                /* Container infos */
+                #container-principal .container-infos{
+                    padding-top: 80px;
+                }
+                #container-principal .container-infos h1{
+                    font-size: 1.6rem;
+                }
+                #container-principal .container-infos p{
+                    font-size: 1.1rem;
+                }
+                #container-principal .container-infos .redes-socias{
+                    font-size: 1.1rem;
+                }
+                .links .link-1 a{
+                    width: 290px;
+                    height: 45px;
+                    font-size: 1.2rem;
+                }
+                .container-infos #rodape p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
