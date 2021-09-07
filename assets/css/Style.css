@@ -1,4 +1,4 @@
-/* Reset da página */
+/* Reset */
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +8,9 @@
 }
 img{
     max-width: 100%;
+}
+html{
+    -webkit-tap-highlight-color: transparent;
 }
 /* Variáveis root - dark and light mode */
 html[data-theme="light"]{
@@ -30,10 +33,9 @@ body{
 /* Conteudo principal */
 #container-principal{
     width: 100%;
-    max-width: 1200px;
+    max-width: 980px;
     margin: 0 auto;
 }
-/*Dark mode*/
 #container-principal .container-input-checkbox{
     position: absolute;
     left: 500px;
@@ -115,7 +117,7 @@ input:checked + .slider .efeito-sol{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 70px;
+    height: 100vh;
 }
 #container-principal .container-infos img{
     width: 15%;
@@ -196,18 +198,27 @@ input:checked + .slider .efeito-sol{
     margin: 0;
 }
 
-/* RESPONSIVIDADE */
+/* Responsividade - 1280px */
+@media screen and (max-width: 1280px){
+    #container-principal .container-input-checkbox{
+        left: 460px;
+    }
+}
 
-/* Responsividade - 780px */
-@media(max-width: 780px){
+/* Responsividade - 1024px */
+@media screen and (max-width: 1024px){
+    #container-principal .container-input-checkbox{
+        left: 330px;
+    }
+}
+
+/* Responsividade - 768px */
+@media screen and (max-width: 768px){
     /*Dark mode*/
     #container-principal .container-input-checkbox{
         left: 200px;
     }
     /* Container infos */
-    #container-principal .container-infos{
-        padding-top: 90px;
-    }
     #container-principal .container-infos img{
         width: 20%;
     }
@@ -221,116 +232,134 @@ input:checked + .slider .efeito-sol{
         font-size: 1.3rem;
     }
     /* Links */
-    .links{
-        padding-top: 40px;
-    }
     .links .link-1 a{
         width: 330px;
         font-size: 1.3rem;
-    }
-    
-    /* Responsividade - 430px */
-    @media(max-width: 430px){
-        /*Dark mode*/
-        #container-principal .container-input-checkbox{
-            left: 40px;
-        }
-        /* Container infos */
-        #container-principal .container-infos{
-            padding-top: 100px;
-        }
-        #container-principal .container-infos img{
-            width: 35%;
-        }
-        #container-principal .container-infos h1{
-            font-size: 1.8rem;
-        }
-        #container-principal .container-infos p{
-            font-size: 1.3rem;
-        }
-        #container-principal .container-infos .redes-socias{
-            font-size: 1.3rem;
-        }
-        /* Links */
-        .links{
-            padding-top: 30px;
-        }
-        /* Footer */
-        .container-infos #rodape p{
-            font-size: 1rem;
-        }    
-       
-        /* Resposividade - 375px */
-        @media(max-width: 375px){
-            /*Dark mode*/
-            #container-principal .container-input-checkbox{
-                left: 20px;
-            }
-            .mudar-tema{
-                height: 32px;
-            }
-            .slider{
-                border-radius: 32px;
-            }
-            .slider:before{
-                height: 24px;
-                width: 24px;
-            }
-            .efeito-lua{
-                bottom: 8px;
-            }
-            .efeito-sol{
-                bottom: 8px;
-            }
-            /* Container infos */
-            #container-principal .container-infos{
-                padding-top: 90px;
-            }
-            #container-principal .container-infos img{
-                width: 40%;
-            }
-            #container-principal .container-infos h1{
-                font-size: 1.7rem;
-            }
-            #container-principal .container-infos p{
-                font-size: 1.2rem;
-            }
-            #container-principal .container-infos .redes-socias{
-                font-size: 1.2rem;
-            }
-            .links .link-1 a{
-                width: 300px;
-                font-size: 1.2rem;
-            }
-            .container-infos #rodape p{
-                padding-top: 40px;
-                font-size: 1rem;
-            }
+    }  
+}
 
-            /* Responsividade - 320px */
-            @media(max-width: 320px){
-                /* Container infos */
-                #container-principal .container-infos{
-                    padding-top: 80px;
-                }
-                #container-principal .container-infos h1{
-                    font-size: 1.6rem;
-                }
-                #container-principal .container-infos p{
-                    font-size: 1.1rem;
-                }
-                #container-principal .container-infos .redes-socias{
-                    font-size: 1.1rem;
-                }
-                .links .link-1 a{
-                    width: 290px;
-                    height: 45px;
-                    font-size: 1.2rem;
-                }
-                .container-infos #rodape p{
-                    font-size: 1rem;
-                }
-            }
-        }
+/* Responsividade - 540px */
+@media screen and (max-width: 540px){
+    #container-principal .container-input-checkbox{
+        left: 100px;
+    }
+}
+
+/* Responsividade - 425px */
+@media screen and (max-width: 425px){
+    /*Dark mode*/
+    #container-principal .container-input-checkbox{
+        left: 50px;
+    }
+    /* Container infos */
+    #container-principal .container-infos img{
+        width: 35%;
+    }
+    #container-principal .container-infos h1{
+        font-size: 1.8rem;
+    }
+    #container-principal .container-infos p{
+        font-size: 1.3rem;
+    }
+    #container-principal .container-infos .redes-socias{
+        font-size: 1.3rem;
+    }
+    /* Links */
+    .links{
+        padding-top: 30px;
+    }
+    /* Footer */
+    .container-infos #rodape p{
+        font-size: 1rem;
+    }    
+}
+
+/* Resposividade - 375px */
+@media screen and (max-width: 375px){
+    /*Dark mode*/
+    #container-principal .container-input-checkbox{
+        left: 30px;
+    }
+    .mudar-tema{
+        height: 32px;
+    }
+    .slider{
+        border-radius: 32px;
+    }
+    .slider:before{
+        height: 24px;
+        width: 24px;
+    }
+    .efeito-lua{
+        bottom: 8px;
+    }
+    .efeito-sol{
+        bottom: 8px;
+    }
+    /* Container infos */
+    #container-principal .container-infos img{
+        width: 40%;
+    }
+    #container-principal .container-infos h1{
+        font-size: 1.7rem;
+    }
+    #container-principal .container-infos p{
+        font-size: 1.2rem;
+    }
+    #container-principal .container-infos .redes-socias{
+        font-size: 1.2rem;
+    }
+    .links .link-1 a{
+        width: 300px;
+        font-size: 1.2rem;
+    }
+    .container-infos #rodape p{
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade - 320px */
+@media screen and (max-width: 320px){
+    /* Container infos */
+    #container-principal .container-infos h1{
+        font-size: 1.6rem;
+    }
+    #container-principal .container-infos p{
+        font-size: 1.1rem;
+    }
+    #container-principal .container-infos .redes-socias{
+        font-size: 1.1rem;
+    }
+    .links .link-1 a{
+        width: 290px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    .container-infos #rodape p{
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade - 280px */
+@media screen and (max-width: 280px){
+    #container-principal .container-input-checkbox{
+        left: 10px;
+    }
+    /* Container infos */
+    #container-principal .container-infos h1{
+        font-size: 1.4rem;
+    }
+    #container-principal .container-infos p{
+        font-size: 1rem;
+    }
+    #container-principal .container-infos .redes-socias{
+        font-size: 1rem;
+    }
+    .links .link-1 a{
+        width: 250px;
+        font-size: 1rem;
+    }
+    .container-infos #rodape p{
+        font-size: 0.9rem;
     }
 }

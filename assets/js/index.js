@@ -1,4 +1,4 @@
-//Função para alterar o tema;
+//Função para alterar o tema - Dark mode - Light mode;
 let checkbox = document.getElementById('checkbox');
 
 checkbox.addEventListener("change", function(){
