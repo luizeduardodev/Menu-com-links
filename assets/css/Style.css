@@ -31,22 +31,26 @@ body{
     background-color: var(--bg);
 }
 /* Conteudo principal */
-#container-principal{
+#container-principal .container-width{
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
-}
-#container-principal .container-input-checkbox{
-    position: absolute;
-    left: 500px;
-    top: 10px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Mudar theme */
+#container-principal .container-width .container-input-checkbox{
+    display: flex;
+    position: absolute;
+    left: 350px;
+    top: 10px;
 }
 .mudar-tema{
     display: inline-block;
-    height: 34px;
     position: relative;
     width: 60px;
+    height: 34px;
 }
 .mudar-tema input{
     display: none;
@@ -111,174 +115,166 @@ input:checked + .slider .efeito-sol{
     font-size: 1rem;
 }
 /* Container infos */
-#container-principal .container-infos{
+#container-principal .container-width .container-infos{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding-top: 80px;
 }
-#container-principal .container-infos img{
+#container-principal .container-width .container-infos img{
     width: 15%;
     border-radius: 50%;
     border: var(--border);
 }
-#container-principal .container-infos h1{
+#container-principal .container-width .container-infos h1{
     color: var(--color-text);
     font-size: 2rem;
     padding-top: 10px;
     font-weight: 500;
 }
-#container-principal .container-infos p{
+#container-principal .container-width .container-infos p{
     color: var(--color-text);
     font-size: 1.4rem;
-    margin-bottom: 5px;
     font-weight: 400;
-}
-#container-principal .container-infos .redes-socias{
-    display: flex;
-    gap: 1rem;
-    font-size: 1.4rem;
-}
-#container-principal .container-infos .redes-socias .insta i{
-    color: var(--color-text);
-    transition: 0.3s;
-}
-#container-principal .container-infos .redes-socias .insta i:hover{
-    color: #C83E73;
-}
-#container-principal .container-infos .redes-socias .linkinden i{
-    color: var(--color-text);
-    transition: .3s;
-}
-#container-principal .container-infos .redes-socias .linkinden i:hover{
-    color: #0A66C2;
-}
-#container-principal .container-infos .redes-socias .github i{
-    color: var(--color-text);
-    transition: .3s;
-}
-#container-principal .container-infos .redes-socias .github i:hover{
-    color: rgba(151, 151, 151, 0.867);
 }
 /* Links */
 .links{
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding-top: 20px;
 }
-.links .link-1 a{
-    width: 350px;
-    height: 50px;
+.links a{
+    width: 33%;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    border-radius: 5px;
-    text-decoration: none;
+    margin-bottom: 20px;
     border: var(--border);
+    border-radius: 5px;
+    transition: .3s;
+    text-decoration: none;
     color: var(--color-text);
     font-size: 1.4rem;
-    transition: .3s;
-    font-weight: 500;
-    margin-bottom: 20px;
+    gap: .5rem;
 }
-.links .link-1 a:hover{
+.links a:hover{
     background-color: var(--bg-link);
     color: var(--color-link);
 }
 /* Footer */
-.container-infos #rodape p{
-    padding-top: 20px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 0;
+#container-principal .container-width .container-infos #rodape{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+#container-principal .container-width .container-infos #rodape p{
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 /* Responsividade - 1280px */
 @media screen and (max-width: 1280px){
-    #container-principal .container-input-checkbox{
-        left: 460px;
+    #container-principal .container-width .container-input-checkbox{
+        left: 310px;
     }
 }
 
 /* Responsividade - 1024px */
 @media screen and (max-width: 1024px){
-    #container-principal .container-input-checkbox{
-        left: 330px;
+    #container-principal .container-width .container-input-checkbox{
+        left: 180px;
+    }
+    #container-principal .container-width .container-infos{
+        padding-top: 0px;
     }
 }
 
 /* Responsividade - 768px */
 @media screen and (max-width: 768px){
     /*Dark mode*/
-    #container-principal .container-input-checkbox{
-        left: 200px;
+    #container-principal .container-width .container-input-checkbox{
+        left: 130px;
     }
     /* Container infos */
-    #container-principal .container-infos img{
+    #container-principal .container-width .container-infos img{
         width: 20%;
     }
-    #container-principal .container-infos h1{
+    #container-principal .container-width .container-infos h1{
         font-size: 1.9rem;
     }
-    #container-principal .container-infos p{
-        font-size: 1.3rem;
-    }
-    #container-principal .container-infos .redes-socias{
+    #container-principal .container-width .container-infos p{
         font-size: 1.3rem;
     }
     /* Links */
-    .links .link-1 a{
-        width: 330px;
+    .links a{
         font-size: 1.3rem;
-    }  
+    }
 }
 
 /* Responsividade - 540px */
 @media screen and (max-width: 540px){
-    #container-principal .container-input-checkbox{
-        left: 100px;
+    #container-principal .container-width .container-input-checkbox{
+        left: 70px;
+    }
+    #container-principal .container-width .container-infos{
+        padding-top: 80px;
+    }
+    /* Container infos */
+    #container-principal .container-width .container-infos img{
+        width: 30%;
+    }
+    /* Links */
+    .links{
+        gap: 0%;
+    }
+    .links a{
+        width: 70%;
+        font-size: 1.4rem;
+    }
+    /* Footer */
+    #container-principal .container-width .container-infos #rodape{
+        padding-top: 0px;
+        padding-bottom: 10px;
     }
 }
 
 /* Responsividade - 425px */
 @media screen and (max-width: 425px){
     /*Dark mode*/
-    #container-principal .container-input-checkbox{
-        left: 50px;
+    #container-principal .container-width .container-input-checkbox{
+        left: 40px;
     }
     /* Container infos */
-    #container-principal .container-infos img{
+    #container-principal .container-width .container-infos img{
         width: 35%;
     }
-    #container-principal .container-infos h1{
+    #container-principal .container-width .container-infos h1{
         font-size: 1.8rem;
     }
-    #container-principal .container-infos p{
+    #container-principal .container-width .container-infos p{
         font-size: 1.3rem;
     }
-    #container-principal .container-infos .redes-socias{
-        font-size: 1.3rem;
+    .links a{
+        width: 80%;
     }
-    /* Links */
-    .links{
-        padding-top: 30px;
+    #container-principal .container-width .container-infos #rodape p{
+        font-size: 1.1rem;
     }
-    /* Footer */
-    .container-infos #rodape p{
-        font-size: 1rem;
-    }    
 }
 
 /* Resposividade - 375px */
 @media screen and (max-width: 375px){
     /*Dark mode*/
-    #container-principal .container-input-checkbox{
-        left: 30px;
+    #container-principal .container-width .container-input-checkbox{
+        left: 20px;
     }
     .mudar-tema{
         height: 32px;
@@ -297,69 +293,67 @@ input:checked + .slider .efeito-sol{
         bottom: 8px;
     }
     /* Container infos */
-    #container-principal .container-infos img{
+    #container-principal .container-width .container-infos img{
         width: 40%;
     }
-    #container-principal .container-infos h1{
+    #container-principal .container-width .container-infos h1{
         font-size: 1.7rem;
     }
-    #container-principal .container-infos p{
+    #container-principal .container-width .container-infos p{
         font-size: 1.2rem;
     }
-    #container-principal .container-infos .redes-socias{
-        font-size: 1.2rem;
+    /* Links */
+    .links a{
+        width: 90%;
     }
-    .links .link-1 a{
-        width: 300px;
-        font-size: 1.2rem;
-    }
-    .container-infos #rodape p{
+    #container-principal .container-width .container-infos #rodape p{
         font-size: 1rem;
     }
 }
 
 /* Responsividade - 320px */
 @media screen and (max-width: 320px){
+     /*Dark mode*/
+     #container-principal .container-width .container-input-checkbox{
+        left: 10px;
+    }
     /* Container infos */
-    #container-principal .container-infos h1{
+    #container-principal .container-width .container-infos h1{
         font-size: 1.6rem;
     }
-    #container-principal .container-infos p{
+    #container-principal .container-width .container-infos p{
         font-size: 1.1rem;
     }
-    #container-principal .container-infos .redes-socias{
-        font-size: 1.1rem;
+    /* links */
+    .links a{
+        width: 90%;
+        font-size: 1.3rem;
     }
-    .links .link-1 a{
-        width: 290px;
-        height: 45px;
-        font-size: 1.2rem;
-    }
-    .container-infos #rodape p{
+    #container-principal .container-width .container-infos #rodape p{
         font-size: 1rem;
     }
 }
 
 /* Responsividade - 280px */
 @media screen and (max-width: 280px){
-    #container-principal .container-input-checkbox{
+    /*Dark mode*/
+    #container-principal .container-width .container-input-checkbox{
         left: 10px;
     }
     /* Container infos */
-    #container-principal .container-infos h1{
+    #container-principal .container-width .container-infos h1{
         font-size: 1.4rem;
     }
-    #container-principal .container-infos p{
+    #container-principal .container-width .container-infos p{
         font-size: 1rem;
     }
-    #container-principal .container-infos .redes-socias{
-        font-size: 1rem;
+    /* links */
+    .links a{
+        width: 90%;
+        height: 90px;
+        font-size: 1.2rem;
     }
-    .links .link-1 a{
-        width: 250px;
-        font-size: 1rem;
-    }
-    .container-infos #rodape p{
+    #container-principal .container-width .container-infos #rodape p{
         font-size: 0.9rem;
     }
 }
