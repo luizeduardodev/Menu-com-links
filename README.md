@@ -13,6 +13,6 @@
 ## 🚀 Tecnologias utilizadas
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Html5;
-- Css3;
+- Html;
+- Css;
 - Javascript;
