@@ -10,9 +10,9 @@
   <a href="https://linkss.netlify.app/">Clique aqui para visitar o projeto</a>
 </h4>
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Html;
-- Css;
+- HTML;
+- CSS;
 - Javascript;
